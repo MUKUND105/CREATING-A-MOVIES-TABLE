@@ -1,0 +1,28 @@
+createdb movie_library;
+
+CREATE TABLE MOVIES (
+id SERIAL PRIMARY KEY,
+Name TEXT NOT NULL,
+Actor TEXT NOT NULL,
+ACTRESS TEXT NOT NULL,
+Director TEXT,
+Year_released INT);
+
+INSERT INTO MOVIES (Name, Actor, Actress, Director, Year_released)
+VALUES ('Magadheera', 'Ram charan', 'Kajal aggarwal', 'S. S. Rajamouli', 2009);
+
+INSERT INTO MOVIES (Name, Actor, Actress, Director, Year_released)
+VALUES (' Baahubali: The Beginning', 'Prabhas', ' Tamannaah', 'S. S. Rajamouli', 2015);
+
+INSERT INTO MOVIES (Name, Actor, Actress, Director, Year_released)
+VALUES (' Temper', ' N. T. Rama Rao Jr.', 'Kajal aggarwal', 'Puri Jagannadh', 2015);
+
+INSERT INTO MOVIES (Name, Actor, Actress, Director, Year_released)
+VALUES (' Baahubali: The conclusion', 'Prabhas', ' Anushka Shetty', 'S. S. Rajamouli', 2017);
+
+INSERT INTO MOVIES (Name, Actor, Actress, Director, Year_released)
+VALUES (' Most Eligible Bachelor', ' Akhil Akkineni', ' Pooja Hegde', 'Bhaskar', 2021);
+
+SELECT * FROM MOVIES;
+
+SELECT Name FROM MOVIES WHERE Actor = 'Prabhas';
